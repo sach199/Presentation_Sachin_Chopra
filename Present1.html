@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">	
+<head>
+<meta charset="utf-8">
+<title>Reveal.js 3 Slide Demo</title>
+<meta name="description" content="Presentation for work done during Summer Internship at CitiCorp Services Pune">
+<meta name="author" content="Sachin Chopra" >
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/simpleMy.css" id="theme">	
+<link rel="stylesheet" href="css/theme/simpleMy.css" id="theme">	
+<!--Add support for earlier versions of Internet Explorer -->
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+ 
+<body >
+<img src="citi4.jpg" align="right"> 
+<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+<div class="reveal">
+<!-- Wrap all slides in a single "slides" class -->
+<div class="slides">
+
+<!-- ALL SLIDES GO HERE -->
+<!-- Each section element contains an individual slide -->
+
+<!-- Opening Slide -->
+<section>
+	<h2>
+		JBPM Process Management
+	</h2>
+	<br/>
+	<h5>
+		<p>Demonstration of Work Done during Summer Internship at <br/><a href="">CTC, Pune</a></p>	
+	</h5>
+	<br/><br/>
+	<p>By : <a>Sachin Chopra </a>
+	<p align="center"><a>CCSM2T </a>
+</section>
+<section>
+	<!--img src="stand.png" height="600"-->
+		<h2><a>Team<hr/><br/></a></h2>
+</section>
+<section>
+	<section>
+		<img src="Munis.png" > 
+		<br/><br/>
+		CCC - The community lending and investing group of Citi 
+	</section>
+	<section>
+	<h3><a>Citi Community Capital</a></h3><hr/>
+		<br/><br/>
+		<ul>
+		<li>Offers the industry’s most comprehensive affordable housing and community development financial products</li><br/>
+		<li>From single project transaction to portfolio wide solutions</li><br/>
+		<li>Combines community development expertise with capital markets capabilities to offer financial solutions that build stronger communities. </li><br/>
+		</ul>
+	</section>
+</section>
+<section>
+	<p class="fragment">In CCC, bankers use an application called<strong><a> DealTrax </a></strong> for making deals.</p>
+	<br/>
+	<p class="fragment"> Helps in various stage of deals: from initial proposal to final lending.</p>
+	
+	
+</section>
+
+<section>
+	<p align="left"><strong><u>&nbsp; DealTrax :&nbsp;</u></strong></p><br/><br/>
+	<section>
+		<a>Current Production Architecture<br/></a>
+		<img src='DTCurrent.jpg' height='600px'>
+		
+	</section>
+
+	<section>
+		<a>Proposed New Architecture<br/></a>
+		<img src='DTUpdate.jpg' height='600px'>
+	</section>
+	<section>
+		<div class="row">Comparison :<br/>
+			<div class="col-md-6">
+				<img src='DTCurrent.jpg' height='600px'>
+			</div>
+			<div class="col-md-6">
+				<img src='DTUpdate.jpg' height='600px'>
+			</div>
+		</div>
+	</section>
+
+</section>
+<!-- Description about JBPM : Slide 2-->
+<section>
+	<section>
+		<h2>
+			JBPM 
+		</h2>
+		<small> An Open Source BPM System </small>
+		<hr/>
+		<br/>
+		<ul>
+		<span class="fragment">
+			<li ><h6><a> About </a></h6></li>
+				<ul>
+				<li>jBPM is a flexible Business Process Management (BPM) System.</li><br/>
+				<li>Allows you to model your business goals by describing the steps that need to be executed, using a flow chart.</li><br/>
+				
+				</ul>
+		</span>	
+		<span class="fragment">
+			<li><h6><a> Advantages </a></h6>
+			<ul>
+				<li>Open Source, Light-weight, Extensible Workflow engine written in pure Java</li><br/>
+				<li>Supports latest BPMN 2.0 specification.</li> <br/>
+			</ul>
+		</span>
+			<br/><br/>
+	</section>
+	<section>
+		<div>
+			<img src="process.png">
+		</div>
+		<br/><br/>
+		A sample JBPM Process (using BPMN 2.0)
+	</section>
+	<section>
+		<img src="pricing.jpg">
+		The Pricing Workflow used in DealTrax
+	</section>
+
+</section>
+
+
+<!-- Need Console -->	
+<section>
+	
+	<br/>
+	<ul>
+		<li>JBPM is being used to replace OBPM in Dealtrax Application used by Municipals team.</li>
+		<br/>
+		<li>The Workflows, initially in OBPM are being re-written in JBPM</li>
+		<br/>
+		<li>This offers :<br/> 
+			<ul>
+			<li>cost benefit as the JBPM is <a>open source</a> application </li>
+			<li><a>extensive features</a>.</li>
+		</li>
+	</ul>
+</section>
+<section>
+		<section>
+			<p>
+			<h2>Issue :</h2>
+			</p>
+			<hr/>
+		</section>
+		<section>
+			<img src="monitor.png">
+		</section>
+		
+		<section>
+			<h3><a>Monitoring</a></h3><hr/><br/>
+			<p align="left" class="fragment">Allows process analysts to detect -</p><br/>
+			<ul>
+				<li class="fragment">Discrepancies between the actual process execution and the <i>a priori</i> model</li><br/>
+				<li class="fragment">Analyze bottlenecks</li><br/>
+				<li class="fragment">Reduce cycle time, defect rate and increase productivity.</li><br/>
+				<li class="fragment">Potential opportunities for cost savings or other improvements</li><br/>
+				
+			</ul>
+		</section>
+		
+		<section>	
+			<h3><a>Need a console to monitor various jBPM instances.</a></h3>
+			<br/><br/>
+			<ul>
+				<li> Should help in identifying stalled processes. </li>
+				<br/>
+				<li> To identify the state of any process instance. </li>
+				<br/>
+				<li> To identify which user group has most pending tasks  </li>
+				
+			</ul>
+		</section>		
+		
+</section>
+
+
+<!-- Possible Solutions KIEConsole / Custom -->	
+
+<section>
+	<section>	
+		<h2>Solutions :</h2>
+		<br/><br/>
+	</section>	
+	<section>	
+		<img src="drools-logo.png" align="right">
+		<ul>
+			<li><h3><a>KIE Console  </a></h3>
+			<br/>
+			<ul>
+			<li class="fragment">Can only work with Git based repositories. </li><br/>
+			<li class="fragment">Can only monitor Workflows deployed using it.</li><br/>
+			<li class="fragment"> Limitations in deploying WARs (Web Application Archives). </li><br/>
+			<li class="fragment"> Limited support for Weblogic server deployment . </li><br/>
+			</li>
+				
+		</ul>
+	</section>
+	<section>	
+		<ul>
+			<li><h3><a>Develop a Custom Console  </a></h3><br/>
+			<ul>
+			<li class="fragment">Will fulfill  our immediate needs. </li><br/>
+			<li class="fragment">Can be easily extended to support our future needs. </li><br/>
+			<li class="fragment"> Would be compliant with different architectures thus, can be used across teams. </li><br/>
+			</li>
+				
+		</ul>
+	</section>
+</section>
+
+<section>
+<h2>Problem Description </h2>
+	<hr/><br/>
+	<ul>
+		<h4>	
+	<!--	 <p>Build a console to manage and monitor the <p/>
+		 <p align="center">JBPM Instances and data.  <p/> -->
+		 Generic jBPM monitoring Dashboard for admin and support users.
+		</h4>
+	</ul>
+</section>	
+<section>
+	<!--
+	<a href="">Technology Used :</a>
+	<table>
+		<tr>
+			<td><img src="gwt-logo.png"></td>
+			<td>           </td>
+			<td> Google Web Toolkit </td>
+			<td> 2.6 </td>
+		</tr>
+		
+		<tr>
+			<td><img src="java-logo.png"></td>
+			<td>           </td>
+			<td> Java&nbsp&nbsp </td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td><img src="bootstrap-logo.png"></td>
+			<td>           </td>
+			<td> Bootstrap </td>
+			<td> 3 </td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td><img src="html-logo.png"></td>
+			<td>           </td>
+			<td> HTML </td>
+		</tr>
+	</table>
+	-->
+<!--
+	<div class="row">
+		<div class="col-md-6">
+			<img src="gwt-logo.png" align="center">
+		</div>
+		<div class="col-md-6" >
+			<p align="center"> Google Web Toolkit 2.6 </p>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="java-logo.png">
+		</div>
+		<div class="col-md-6">
+			<p align="center"> Java </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="bootstrap-logo.png">
+		</div>
+		<div class="col-md-6">
+			<p align="center"> Bootstrap 3 </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="html-logo.png">
+		</div>
+		<div class="col-md-6">
+			<p align="center"> HTML / CSS </p>
+		</div>
+	</div> -->
+	
+	<h3>Tools and Technologies Used : </h3>
+	<br/><br/>
+	<div class="row">
+		<div class="col-md-3">
+			<img src="gwt-logo.png"><br/>
+			Google Web Toolkit 2.6
+
+		</div>
+		<div class="col-md-3">
+			<img src="bootstrap-logo.png"><br/>
+			Bootstrap
+
+		</div>
+		<div class="col-md-3">
+			<img src="java-logo.png"><br/>
+			Java
+
+		</div>
+		<div class="col-md-3">
+			<img src="sonar-logo.png"><br/>
+			SonarQube 4.5LTS
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<img src="sql-logo.png"><br/>
+			SQL Server
+
+		</div>
+		<div class="col-md-3">
+			<img src="html-logo.png"><br/>
+			HTML / CSS
+
+		</div>
+		<div class="col-md-3">
+			<img src="jbpm-logo.jpg"><br/>
+			JBPM
+
+		</div>
+		
+		<div class="col-md-3">
+			<img src="weblogic-logo.jpg"><br/>
+			Weblogic
+
+		</div>
+	</div>
+
+	<div class="row">
+		
+	</div>
+
+	
+</section>
+
+
+
+
+<section>
+	<h2>Application Developed : </h2>
+</section>
+<section>
+	<!--
+	KAPA 
+	<p align="left">Knowledge<small>of the system</small>,<br/> Analysis<small>of knowledge and data</small> ,<br/> Performance<small>The analysis should result in increased performance</small> ,<br/> Action<small>Take action on basis of knowledge and analysis.</small></p><hr/><br/>.
+		Give a brief overview of architecture and basic Tech of your Solution.
+	-->	
+	<section>
+	<h2><a>JBPM DashBoard</a></h2>
+	
+	<hr/><br/>
+	</section>
+	<section>
+	<ul>
+	<li><a>Features : </a></li><br/>
+		<ul>
+			<li class="fragment"> Shows all the processes running on the server. </li>
+			<br/>
+			<li class="fragment"> Can select any particular instance of a process.</li>
+			<br/>
+			<li class="fragment"> View  <br?>
+				<ul>
+					<li class="fragment"> status of the instance</li>
+					<li class="fragment"> who it is assigned to </li>
+					<li class="fragment"> start and stop dates. etc. </li> 
+					<li class="fragment"> See the values associated with a process. </li><br/>
+				</ul>
+			<li class="fragment"> Terminate a stalled process. </li>
+			
+			
+		</ul>
+	</ul>
+	</section>
+</section>
+<section>
+	<section><!-- internal Slide 1-->
+		<h3><a> Process Definitions </a></h3><br/> 
+		<h6>List of all the Workflows running on the system</h6><hr/><br/>
+	</section>
+	<section>
+		<a>First screen of the Dashboard -</a><br/><br/>
+		<ul>
+			<li> Shows the count of running instances of each process. </li><br/>
+			<li> Displays a graphical representation of the same. </li><br/>
+		</ul>
+	</section>
+
+	
+	<section><!-- internal Slide 2 -->
+		
+			<img src="Screen1.png">
+		
+	</section>
+	<section> <!-- internal Slide 3 -->
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen1_Top.png"></div>
+		</div>
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen1_Middle.png"></div>
+		</div>
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen1_Bottom.png"></div>
+		</div>
+			
+	</section>
+	
+	
+
+</section>
+<section>
+	
+	<!--iframe src="http://localhost:8081" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+    Your browser doesn't support iframes
+</iframe-->
+	<!--iframe class="i"  width="1024px" height="720px" src="http://localhost:8081" frameborder="1" allowfullscreen></iframe-->
+	<!--iframe width="560" height="315" src="https://www.youtube.com/embed/4bXvTaiLRP0" frameborder="0" allowfullscreen></iframe-->
+</section>
+
+<section>
+	<section><!-- internal Slide 1-->
+		
+			<h3><a>Process Instances</a></h3><br/> 
+			<h6> List of all the Instances for Selected Workflow </h6><hr/><br/>
+	</section>
+	<section>
+		<a>Second screen of the Dashboard</a> -<br/><br/> 
+		<ul>
+			<li> Various filters to let you quickly select required instance </li><br/>
+			<li> Gives an overview regarding various instances of that process  </li><br/>
+		</ul>
+	</section>
+
+	
+	<section><!-- internal Slide 2 -->
+		
+			<img src="Screen2.png">
+		
+	</section>
+	<section> <!-- internal Slide 3 -->
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen2_Top.png"></div>
+		</div>
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen2_Filters.png"></div>
+		</div>
+		<div class="rows">
+			<div class="col-md-9 fragment grow highlight-red" >
+				<div class='fragment shrink ' ><img src="Screen2_Left.png"></div>
+			</div>
+			<div class="col-md-3 fragment grow highlight-red" >
+				<div class='fragment shrink ' ><img src="Screen2_Right.png"></div>
+			</div>
+		</div>
+	</section>
+	
+	
+
+</section>
+
+<section>
+
+	<!--iframe class="i" width="1800" height="1200" src="http://localhost:8081#screen2" frameborder="1" allowfullscreen></iframe-->
+
+</section>
+
+
+<!--
+<section>
+	<section><!-- internal Slide 1-->
+<!--		<h2>Screen 2</h2> 
+		<h4> List of all the Instances for Selected Workflow </h4>
+		<ul>
+			<li> Various filters to let you quickly select required instance </li>
+			<li> Gives an overview regarding various instances of that process  </li>
+			<ul>
+				<li>How many instances are Running / Completed / Terminated. </li>
+				<li> Which User Groups are required to act etc. </li>
+			</ul>
+			
+		</ul>
+	</section>
+
+	
+	<section><!-- internal Slide 2 
+		
+			<img src="Screen2.png">
+	
+	</section>
+	 internal Slide 3 -->
+<!--	<section>
+		<div class="fragment grow highlight-red" >
+			<img src="Screen2_Top.png">
+		</div>
+		<ul>
+			<li> Shows the Workflow whose Instances we are looking at.  </li>
+			<li> Also act as Breadcrumbs for navigation.</li>
+		</ul>
+	</section>
+	<section>internal slide 5-->
+	<!--	<div class="fragment grow highlight-red" >
+			<img src="Screen2_Filters.png">
+		</div>
+		Filters to quickly get the required instances.
+		We can filter by : 
+		<ul>
+			<li> Instance Id </li>
+			<li> User Group </li>
+			<li> Status </li>
+			<li> Start Date </li>
+			<li> End Group </li>
+			<li> User Defined  External Key </li>
+		</ul>
+	</section>
+	<section>internal slide 6
+		<div class="rows"> 
+		<div class="col-md-6">
+		<img src="Screen2_Right.png" align='left'>
+		</div>
+		<div class="col-md-6">
+		Plots to quickly give a graphical representation of data.
+		<ul align = 'right' style='float: right'>
+			<li> Plot 1 :<small> <br/>shows processes that are - Running / Completed / Terminated. </small></li><br/>
+			<li> Plot 2 :<small> <br/>shows on how many instances each User Group has a pending action. </small></li><br/>
+		</ul>
+		</div>
+		</div>
+	</section>	
+	-->
+	
+
+<section>
+	<section><!-- internal Slide 1-->
+		<h3><a> Instance Details </a></h3><br/> 
+		<h6> Details about the selected Instance </h6><hr/><br/>
+	</section>
+	<section>	
+		<a>Third Screen of the Dashboard - </a><br/><br/>
+		<ul>
+			<li> Shows various Tasks which were executed while process instance was running. </li><br/>
+			<li> The values which were set for variables while instance was running.</li><br/>
+			<li> An option to terminate an instance (ex. if it is stalled).</li>
+		</ul>
+	</section>
+
+	
+	<section><!-- internal Slide 2 -->
+		
+			<img src="Screen3.png">
+		
+	</section>
+	<section> <!-- internal Slide 3 -->
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen3_Top.png"></div>
+		</div>
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen3_Middle.png"></div>
+		</div>
+		<div class="fragment grow highlight-red" >
+			<div class='fragment shrink ' ><img src="Screen3_Bottom.png"></div>
+		</div>
+			
+	</section>
+	
+	
+
+</section>
+
+
+<section>
+	
+		<!--iframe class="i" width="2200px" height="1200" src="http://localhost:8081" frameborder="0" allowfullscreen></iframe-->
+	
+</section>
+<section>
+
+	<section>
+		<h2><a>Configurable</a></h2><hr/><br/>
+		<p align="left">Configuration File to make Dashboard generic and deployable across different architectures.</p>
+		
+		
+		<p align="left"> Following Configurations are possible :</p>
+		<ul>
+			<li>Choice of Database. </li><br/>
+			<li>Option to include a column from front end application. </li>
+		</ul>
+	</section>
+	<section>
+		<img src="config.png">
+	</section>
+</section>
+<!--section>
+
+	<h2>DEMO</h2>
+
+</section-->
+
+<section>
+	<h2><a> Results </a></h2><hr/><br/>
+<ul>
+	<li class="fragment"> A generic Dashboard for monitoring and managing JBPM Workflows. </li><br/>
+	<li class="fragment"> Ability to link to columns from GUI for enhanced management. </li><br/>
+	<li class="fragment"> Minimal dependencies and configurations to make deployment very fast and simple. </li><br/>
+	
+	
+</ul>
+
+</section>
+<section>
+	<h3><a>The JBPM Console was presented to : </a></h3><hr/><br/>
+	<li> Global DealTrax Technology Team </li><br/>
+	<li> Citi Research Team</li><br/>
+	
+	and their valuable suggestions were accommodated.
+	
+</section>
+<section>
+	<section>
+		<h2>Quality of Code </h2>
+		<hr/><br/>
+	</section>
+	<section>
+	<a>Completed SonarQube Evaluation -</a>
+	<br/><br/>
+	
+	
+	<ul>
+		<li> Low Technical debt : 2.0 % </li><br/>
+		<li> SQALE Rating - <strong>A</strong>  </li><br/>
+		<li> Blocker Issues : <strong>0</strong></li><br/>
+		<li> Critical Issues : <strong> &nbsp;0</strong></li><br/> 
+	</ul>
+	</section>
+	
+	<section>
+		<img src="sonar4.5.png"><br/><br/>
+	</section> 
+</section>
+<section>
+	<section>
+	<h2>
+		Possible Extensions 
+	</h2><hr/><br/><br/>
+	</section>
+	<section>
+		<ul>
+			<li class="fragment"> More JBPM API Calls can be added as per need.  </li><br/>
+			<span class="fragment">
+			<li> Any existing web service can be consumed.  </li><br/>
+			
+			<li> For Example :</li><br/>
+			<ul>
+				<li> Start Service </li><br/>
+				<li> Delegate Task etc. </li><br/>
+			</ul>
+			</span>
+			<br/>
+			<li class="fragment"> Integration with SSO. </li>
+		</ul>
+	</section>
+
+</section>
+<section>
+	<section>
+	<h2> Learning Outcome  <h2><hr/><br/>
+	</section>
+	<section>
+	<ul>
+		<li ><strong><a>Professional</a></strong></li><br/>
+		<ul >
+			<li > Understanding different phases of SDLC like requirements, designing, coding, testing, deployment for real world applications.</li><br/>
+			<li > Exposure to diverse technology and tools. </li><br/>
+			<li > Interaction with some very talented and experienced Developers. </li><br/>
+
+		</ul>
+	</ul>
+	</section>
+	<section>
+	<ul>	
+		<li ><a><strong>Personal</strong></a></li><br/>
+		<ul >
+			<li > Getting an insight into the norms and conventions of a huge corporation like CITI </small></li><br/>
+			<li > Values of teamwork and synergy. </small></li><br/>
+			<li > Working and interacting with veterans provided immense learning opportunities. </small></li><br/>
+			
+
+			
+		</ul>
+	</ul>
+	</section>
+</section>
+
+<section>
+<h3 class="bg-success"><strong> Thank You ! </strong></h3>
+</section>
+<section>
+<h2>Appendix</h2>
+</section>
+<section>
+<small>
+<pre><code>
+q1=select  t1.processId, count, processName 
+from ( select processId, count(processId) AS count from ProcessInstanceLog where status = 1 group by processId ) t1 
+Inner Join (select distinct processId ,  processName  from ProcessInstanceLog where status = 1 ) t2 
+ON t1.processId = t2.processId;
+
+
+q2=Select  ProcessInstanceLog.processInstanceId, ProcessInstanceLog.processId, start_date, end_date, user_identity, outcome, processInstanceDescription, processName, ProcessInstanceLog.status , PeopleAssignments_PotOwners.entity_id, subject, Task.name 
+from (dbo.ProcessInstanceLog    LEFT JOIN dbo.Task     
+ON (dbo.Task.processInstanceId = dbo.ProcessInstanceLog.processInstanceId AND Task.status != 'Completed') 
+LEFT JOIN dbo.PeopleAssignments_PotOwners ON PeopleAssignments_PotOwners.task_id = Task.id)
+WHERE  ProcessInstanceLog.processId='"+defn.getProcessId()+"' 
+order by processInstanceId desc;
+
+
+q3=select variableId, value from dbo.VariableInstanceLog where processInstanceId=
+</code></pre>
+</small>
+</section>
+<section>
+	<section>
+		<h2>Software Design Approach : <a>MVP Pattern</a></h2>
+	</section>
+	<section>
+		<img src="mvp.png">
+	</section>
+	<section>
+		<img src="design.png">
+	</section>
+</section>
+<section>
+	<section>
+		<h3><a>Timeline</a></h3><br/>
+	</section>
+	<section>
+		<img src="timeline.png">
+	</section>
+</section>
+<section>
+	<section>
+		<h3><a>SQALE </a></h3><br/>(Software Quality Assessment based on Lifecycle Expectations) 
+	</section>
+	<section>
+		Answer fundamental questions such as:<br/><br/>
+		<ul>
+<li>What is the quality of the source code delivered by the developers?</li><br/>
+<li>Is the code changeable, maintainable, portable, reusable?</li><br/>
+<li>What is the design debt stored up by the project?</li><br/>
+	</ul>
+	</section>
+</section>
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+ 
+<script>
+// Required, even if empty.
+Reveal.initialize({
+	controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+});
+</script>
+</body>
+</html>
